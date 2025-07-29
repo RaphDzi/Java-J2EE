@@ -18,3 +18,14 @@ La page d'accueil (index) de l'application contiendra des liens pour accéder à
 Nous souhaitons ajouter à l'exercice 1 deux autres servlets qui transfèrent leurs requêtes vers des pages JSP.
 Nos trois pages JSP devront utiliser la librairie Bootstrap sans nécessiter de réimporter cette bibliothèque
 sur chaque page.
+
+
+
+## Exercice 2
+
+Nous allons creer une servlet qui transfère sa requête vers une page JSP afin d'afficher dans
+un tableau (avec Bootstrap) une liste d'au moins trois personnes.
+Chaque personne sera représentée par au moins :
+- Un nom
+- Un prénom
+- Un âge
