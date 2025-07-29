@@ -8,13 +8,13 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
-@WebServlet("/servlet2")
+@WebServlet("/pageBootstrap2")
 public class Servlet2 extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.setAttribute("mode","jstl");
         req.setAttribute("nom","raphael");
-        req.getRequestDispatcher("/pageBootstrap.jsp").forward(req,resp);
+        req.getRequestDispatcher("/pageBootstrap2.jsp").forward(req,resp);
     }
 }

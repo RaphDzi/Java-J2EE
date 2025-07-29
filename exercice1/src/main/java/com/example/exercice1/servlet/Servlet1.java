@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 
-@WebServlet("/servlet1")
+@WebServlet("/pageBootstrap")
 public class Servlet1 extends HttpServlet {
 
     @Override
