@@ -1,6 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.util.List" %>
 <%@ page import="com.example.exercice2.transfertServlet.Personne" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <html>
 <head>
     <title>Liste des personnes</title>
@@ -22,7 +24,7 @@
         <tbody>
         <%
             List<Personne> personnes = (List<Personne>) request.getAttribute("listePersonnes");
-            if (personnes != null) {
+            if (personnes != null && !personnes.isEmpty()) {
                 for (Personne p : personnes) {
         %>
         <tr>
